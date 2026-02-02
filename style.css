@@ -1,0 +1,86 @@
+body {
+  text-align: center;
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Title */
+h1 {
+  margin-top: 15px;
+}
+
+/* Scoreboard */
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.scoreboard p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Start Button */
+#start-btn {
+  padding: 10px 25px;
+  margin: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Game Grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  width: 320px;
+  margin: 30px auto;
+}
+
+/* Buttons */
+.btn {
+  height: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.green { background: #2ecc71; }
+.red { background: #e74c3c; }
+.yellow { background: #f1c40f; }
+.blue { background: #3498db; }
+
+.pressed {
+  opacity: 0.4;
+  box-shadow: 0 0 20px white;
+}
+
+/* Game Over effect */
+.game-over {
+  background: crimson !important;
+}
+
+/* 📱 Mobile Responsive */
+@media(max-width: 500px) {
+  .container {
+    width: 90vw;
+  }
+
+  .btn {
+    height: 35vw;
+  }
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 15px;
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+}
